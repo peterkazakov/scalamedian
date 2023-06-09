@@ -55,8 +55,6 @@ object Median extends App {
 
   //comparison: https://gist.github.com/pauca/a7b3264d4102f5d1dec4
   val randomlyGeneratedSeq = generateInts(20000)
-  println(time(median_priority(randomlyGeneratedSeq)))
-  println(time(median(randomlyGeneratedSeq)))
-
-
+  println("Median sorting result: "+time(median(randomlyGeneratedSeq)))
+  println("Median priority result: "+time(median_priority(randomlyGeneratedSeq)))
 }
